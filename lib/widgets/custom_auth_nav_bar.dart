@@ -18,6 +18,7 @@ class CustomAuthNavBar extends StatelessWidget {
           margin: const EdgeInsets.symmetric(vertical: 15),
           width: 200,
           
+          
           child: Image.asset(
             'assets/oficina.png',
             height: 40,

@@ -6,6 +6,7 @@ class AuthButton extends StatelessWidget {
 
   AuthButton(this.logo, this.buttonText);
 
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(

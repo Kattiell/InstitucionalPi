@@ -20,7 +20,6 @@ class CustomNavBar extends StatelessWidget {
               hoverColor: Colors.transparent,child: Image.asset('assets/oficina.png', width: 200)),
           Spacer(),
           CustomDropDown('Acadêmico'),
-
           SizedBox(width: 25),
           CustomDropDown('Segurança'),
           SizedBox(width: 25),
@@ -52,6 +51,7 @@ class CustomNavBar extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             style: ButtonStyle(
+
               backgroundColor:
                   MaterialStateProperty.all<Color>(Const.OffBlue),
               padding: MaterialStateProperty.all<EdgeInsets>(

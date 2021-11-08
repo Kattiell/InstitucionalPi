@@ -14,6 +14,8 @@ final List<String> imgList = [
   'http://res.cloudinary.com/dz5jygk3x/image/upload/v1537292575/1d6f6842-8f62-43aa-8967-20c7d11fa332',
 ];
 
+
+
 List<Widget> tripleCarousel(List<String> imgList) {
   final List<Widget> listItems = List.empty(growable: true);
 
