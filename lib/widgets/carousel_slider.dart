@@ -12,14 +12,17 @@ final List<String> imgList = [
   'http://res.cloudinary.com/hkctpkaed/image/upload/v1608743251/1728dc62-ce44-479b-8130-581d0828f85f',
   'http://res.cloudinary.com/hkctpkaed/image/upload/v1608743841/d516a25a-ce12-4129-ae69-355546f6a3c1',
   'http://res.cloudinary.com/dz5jygk3x/image/upload/v1537292575/1d6f6842-8f62-43aa-8967-20c7d11fa332',
+  'http://res.cloudinary.com/hkctpkaed/image/upload/v1608743841/d516a25a-ce12-4129-ae69-355546f6a3c1',
+  'http://res.cloudinary.com/dz5jygk3x/image/upload/v1537292575/1d6f6842-8f62-43aa-8967-20c7d11fa332',
+  'http://res.cloudinary.com/hkctpkaed/image/upload/v1537460901/0f1e9da7-ed22-46ca-80bf-c95394bb20cc',
 ];
 
 
 
-List<Widget> tripleCarousel(List<String> imgList) {
+List<Widget> QuadraCarousel(List<String> imgList) {
   final List<Widget> listItems = List.empty(growable: true);
 
-  for (var i = 0; i <= imgList.length - 1; i += 3) {
+  for (var i = 0; i <= imgList.length - 1; i += 4) {
     listItems.add(Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -47,6 +50,14 @@ List<Widget> tripleCarousel(List<String> imgList) {
             ],
           ),
         ),
+         Padding(
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          child: Column(
+            children: [
+              Image.network(imgList[i + 3], fit: BoxFit.cover, width: 350),
+            ],
+          ),
+        ),
       ],
     ));
   }
@@ -62,7 +73,7 @@ class CarouselSlide extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(15)),
           //color: Colors.black38 //black26
           ),
-      width: 1460,
+      width: 1560,
       child: Column(
         children: [
           Container(
@@ -100,7 +111,7 @@ class CarouselSlide extends StatelessWidget {
                 enlargeCenterPage: false,
                 scrollDirection: Axis.horizontal,
               ),
-              items: tripleCarousel(imgList),
+              items: QuadraCarousel(imgList),
             ),
           ),
         ],

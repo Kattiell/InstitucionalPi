@@ -8,6 +8,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:udacity_clone/widgets/carousel_slider.dart';
 import 'package:udacity_clone/widgets/custom_body.dart';
 import 'package:udacity_clone/widgets/custom_nav_bar.dart';
+import 'package:udacity_clone/widgets/card_como_ajudar.dart';
 
 //import '../const.dart';
 //import 'authentication_screen.dart';
@@ -42,17 +43,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black,
                 ),
                 CustomBody(),
-                CarouselSlide(),
+                CarouselSlide(),             
                 Padding(
                   padding: EdgeInsets.only(bottom: 30),
                   child: Container(
-                    color: Colors.white,
-                    alignment: Alignment.centerLeft,
-                    child: Column(
+                    color: Colors.black12,
+                    width: 1900,
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                        Column(
                           children: [
                             Text(
                               'A PROTEC PRODUTOS AGRÍCOLAS LTDA, fundada em 25/03/1.997,\natua há 21 anos no mercado agrícola do Triângulo Mineiro e Alto Paranaíba.\n Com sede um Uberlândia e 12 filiais no Estado de Minas Gerais,\n comercializamos Insumos Agrícolas como: Fertilizantes Granulados, Sementes, Defensivos Agrícolas e Fertilizantes Foliares.\n Contamos com um total de 205 colaboradores e uma política única de Recursos Humanos... ',
@@ -63,13 +63,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                 color: Colors.grey[850],
                               ),
                             ),
+                            Container(
+                              alignment: Alignment.topLeft,
+                              child: CircleAvatar(
+                                backgroundImage:
+                                    AssetImage('Images/software2.png'),
+                              ),
+                            ),
                           ],
                         ),
-                        Container(
-                          child: CircleAvatar(
-                            backgroundImage: AssetImage('Images/software2.png'),
-                          ),
-                        )
+                        CardHowToHelp(),
                       ],
                     ),
                   ),
@@ -87,12 +90,20 @@ class _HomeScreenState extends State<HomeScreen> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                         ),
+                        
                         child: Column(
+                          
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
+                            
+                            Padding(
+                              padding: const EdgeInsets.only(top: 20),
+                              child: Text('Redes Sociais'),
+                            ),
+                            
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                
                                 Container(
                                   child: IconButton(
                                     icon: FaIcon(FontAwesomeIcons.whatsapp),
@@ -127,21 +138,47 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ],
                             ),
-                            Container(
-                              alignment: Alignment.topLeft,
-                              height: 50,
+                            
+                              Container(
                               child: VerticalDivider(
-                                
-                                width: 15,
                                 color: Colors.black,
+                                width: 80,
                               ),
                             ),
+                            
                             Text(
-                                '© 2021 Projeto Pi - Desenvolvido por: Alunos Unipam '),
+                              '© 2021 Projeto Pi - Desenvolvido por: Alunos Unipam',
+                              
+                            ),
+                          
+                            Container(                                      
+                              child: Text(                      
+                                'Localização',
+                                style: TextStyle(
+                                  
+                                  fontFamily: 'OpenSans',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14,
+                                ),
+                              textAlign: TextAlign.right,  
+                              ),
+                              
+                            ),
+                            Container(
+                              alignment: Alignment.topLeft,
+                              child: Text(
+                                'Contato',
+                                style: TextStyle(
+                                  fontFamily: 'OpenSans',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                         width: MediaQuery.of(context).size.width,
-                        height: 120,
+                        height: 180,
                       ),
                     ),
                   ],
