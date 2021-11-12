@@ -27,8 +27,9 @@ class CardHowToHelp extends StatelessWidget {
                 child: Text(
                   "COMO AJUDAR ?",
                   style: TextStyle(
+                    fontFamily: 'OpenSans',
                     fontWeight: FontWeight.bold,
-                    fontSize: 30,
+                    fontSize: 26,
                   ),
                 ),
               ),
@@ -43,7 +44,7 @@ class CardHowToHelp extends StatelessWidget {
                   ),
                   Text(
                     "Doações de produtos para o lanche e/ou material de limpeza.",
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(fontSize: 25, fontFamily: 'OpenSans',),
                   ),
                 ],
               ),
@@ -58,7 +59,7 @@ class CardHowToHelp extends StatelessWidget {
                   ),
                   Text(
                     "Doações em dinheiro valor indeterminado.",
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(fontSize: 25, fontFamily: 'OpenSans',),
                   ),
                 ],
               ),
@@ -73,7 +74,7 @@ class CardHowToHelp extends StatelessWidget {
                   ),
                   Text(
                     "Doações de livros de literatura lançados recentemente para a biblioteca.",
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(fontSize: 25, fontFamily: 'OpenSans',),
                   ),
                 ],
               ),
@@ -89,7 +90,8 @@ class CardHowToHelp extends StatelessWidget {
                   Expanded(
                     child: Text(
                       "Se tornar um patrocinador do projeto com o valor de 7 x R\$ 430,00 possibilitando a vaga para mais um aluno. Isso incluirá você ao nosso quadro de patrocinadores.",
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 25,fontFamily: 'OpenSans',),
+                      textAlign: TextAlign.justify,
                     ),
                   ),
                 ],
@@ -106,7 +108,8 @@ class CardHowToHelp extends StatelessWidget {
                   Expanded(
                     child: Text(
                       "Através de prestação de serviço que o Instituto esteja necessitando o que o incluirá como Parceiro.",
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 25, fontFamily: 'OpenSans',),
+                      textAlign: TextAlign.justify,
                     ),
                   ),
                 ],

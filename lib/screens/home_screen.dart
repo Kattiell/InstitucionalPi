@@ -4,11 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:udacity_clone/widgets/carousel_slider.dart';
 import 'package:udacity_clone/widgets/custom_body.dart';
 import 'package:udacity_clone/widgets/custom_nav_bar.dart';
 import 'package:udacity_clone/widgets/card_como_ajudar.dart';
+import 'package:udacity_clone/widgets/left.dart';
+import 'package:udacity_clone/widgets/middle.dart';
+import 'package:udacity_clone/widgets/right.dart';
+
+import '../custom_dialog_box.dart';
 
 //import '../const.dart';
 //import 'authentication_screen.dart';
@@ -43,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Colors.black,
                 ),
                 CustomBody(),
-                CarouselSlide(),             
+                CarouselSlide(),
                 Padding(
                   padding: EdgeInsets.only(bottom: 30),
                   child: Container(
@@ -63,6 +67,22 @@ class _HomeScreenState extends State<HomeScreen> {
                                 color: Colors.grey[850],
                               ),
                             ),
+                            // ignore: deprecated_member_use
+                            RaisedButton(
+                              onPressed: () {
+                                showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return CustomDialogBox(
+                                        title:
+                                            "'A PROTEC PRODUTOS AGRÍCOLAS LTDA",
+                                        descriptions:
+                                            "Fundada em 25/03/1.997,atua há 21 anos no mercado agrícola do Triângulo Mineiro e Alto Paranaíba.Com sede um Uberlândia e 12 filiais no Estado de Minas Gerais,comercializamos Insumos Agrícolas como: Fertilizantes Granulados, Sementes, Defensivos Agrícolas e Fertilizantes Foliares.Contamos com um total de 205 colaboradores e uma política única de Recursos Humanos... ",
+                                        text: "Sair",
+                                      );
+                                    });
+                              },
+                            ),
                             Container(
                               alignment: Alignment.topLeft,
                               child: CircleAvatar(
@@ -80,109 +100,40 @@ class _HomeScreenState extends State<HomeScreen> {
                 Column(
                   children: [
                     Divider(
-                      color: Colors.black54,
+                      color: Colors.black26,
                       height: 0,
                       thickness: 10,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 1),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                        ),
-                        
-                        child: Column(
-                          
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                      child: IntrinsicHeight(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            
-                            Padding(
-                              padding: const EdgeInsets.only(top: 20),
-                              child: Text('Redes Sociais'),
+                            Left(),
+                            VerticalDivider(
+                              color: Colors.black38,
+                              thickness: 4,
+                              endIndent: 15,
+                              indent: 10,
                             ),
-                            
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.whatsapp),
-                                    color: Colors.green,
-                                    alignment: Alignment.center,
-                                    onPressed: () {},
-                                  ),
-                                ),
-                                Container(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.instagram),
-                                    color: Colors.pink,
-                                    alignment: Alignment.center,
-                                    onPressed: () {},
-                                  ),
-                                ),
-                                Container(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.facebook),
-                                    color: Colors.blue,
-                                    alignment: Alignment.center,
-                                    onPressed: () {},
-                                  ),
-                                ),
-                                Container(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.github),
-                                    color: Colors.black,
-                                    alignment: Alignment.center,
-                                    onPressed: () {},
-                                  ),
-                                ),
-                              ],
+                            Middle(),
+                            VerticalDivider(
+                              color: Colors.black38,
+                              endIndent: 15,
+                              indent: 10,
+                              thickness: 4,
                             ),
-                            
-                              Container(
-                              child: VerticalDivider(
-                                color: Colors.black,
-                                width: 80,
-                              ),
-                            ),
-                            
-                            Text(
-                              '© 2021 Projeto Pi - Desenvolvido por: Alunos Unipam',
-                              
-                            ),
-                          
-                            Container(                                      
-                              child: Text(                      
-                                'Localização',
-                                style: TextStyle(
-                                  
-                                  fontFamily: 'OpenSans',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14,
-                                ),
-                              textAlign: TextAlign.right,  
-                              ),
-                              
-                            ),
-                            Container(
-                              alignment: Alignment.topLeft,
-                              child: Text(
-                                'Contato',
-                                style: TextStyle(
-                                  fontFamily: 'OpenSans',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ),
+                            Right(),
                           ],
                         ),
-                        width: MediaQuery.of(context).size.width,
-                        height: 180,
                       ),
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ),

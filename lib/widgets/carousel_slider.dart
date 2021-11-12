@@ -3,18 +3,18 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 
 final List<String> imgList = [
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1573755959/a736cac5-1b0f-4407-a5b4-ae886ad52cad',
-  'http://res.cloudinary.com/dz5jygk3x/image/upload/v1537292534/f663b474-78d5-409c-bdb1-a23eddcae45e',
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1537460901/0f1e9da7-ed22-46ca-80bf-c95394bb20cc',
-  'http://res.cloudinary.com/dz5jygk3x/image/upload/v1537292484/0720c467-52d5-4456-bdba-761bb805987a',
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1608816217/173856b6-cf04-4fe5-9970-3b40da5c843e',
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1608747321/bfac0838-383c-4eea-ae41-0f396a4cbf8a',
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1608743251/1728dc62-ce44-479b-8130-581d0828f85f',
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1608743841/d516a25a-ce12-4129-ae69-355546f6a3c1',
-  'http://res.cloudinary.com/dz5jygk3x/image/upload/v1537292575/1d6f6842-8f62-43aa-8967-20c7d11fa332',
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1608743841/d516a25a-ce12-4129-ae69-355546f6a3c1',
-  'http://res.cloudinary.com/dz5jygk3x/image/upload/v1537292575/1d6f6842-8f62-43aa-8967-20c7d11fa332',
-  'http://res.cloudinary.com/hkctpkaed/image/upload/v1537460901/0f1e9da7-ed22-46ca-80bf-c95394bb20cc',
+  'images/images_carousel/1.jpeg',
+  'images/images_carousel/2.jpeg',
+  'images/images_carousel/3.jpeg',
+  'images/images_carousel/4.jpeg',
+  'images/images_carousel/5.jpeg',
+  'images/images_carousel/6.jpeg',
+  'images/images_carousel/7.jpeg',
+  'images/images_carousel/8.jpeg',
+  'images/images_carousel/9.jpeg',
+  'images/images_carousel/3.jpeg',
+  'images/images_carousel/6.jpeg',
+  'images/images_carousel/9.jpeg',
 ];
 
 
