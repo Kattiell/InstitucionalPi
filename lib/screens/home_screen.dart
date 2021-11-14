@@ -14,8 +14,6 @@ import 'package:udacity_clone/widgets/right.dart';
 
 import '../custom_dialog_box.dart';
 
-//import '../const.dart';
-//import 'authentication_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   static const routeName = '/';
@@ -84,10 +82,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               },
                             ),
                             Container(
-                              alignment: Alignment.topLeft,
+                              alignment: Alignment.bottomLeft,
                               child: CircleAvatar(
                                 backgroundImage:
-                                    AssetImage('Images/software2.png'),
+                                    AssetImage('Images/protec.jpg'),
                               ),
                             ),
                           ],

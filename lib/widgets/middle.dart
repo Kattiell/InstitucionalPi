@@ -9,14 +9,24 @@ class Middle extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text('Redes Sociais'),
+          Text(
+            'Redes Sociais',
+            style: TextStyle(
+              fontFamily: 'OpenSans',
+              fontSize: 20,
+              color: Colors.black,
+            ),
+          ),
+
+          //Divider(color: Colors.blue,),
+
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 child: IconButton(
-                  icon: FaIcon(FontAwesomeIcons.whatsapp),
-                  color: Colors.green,
+                  icon: FaIcon(FontAwesomeIcons.linkedin),
+                  color: Colors.blueAccent,
                   alignment: Alignment.center,
                   onPressed: () {},
                 ),
@@ -49,6 +59,11 @@ class Middle extends StatelessWidget {
           ),
           Text(
             '© 2021 Projeto Pi - Desenvolvido por: Alunos Unipam',
+            style: TextStyle(
+              fontFamily: 'OpenSans',
+              fontSize: 15,
+              color: Colors.black,
+            ),
           ),
         ],
       ),

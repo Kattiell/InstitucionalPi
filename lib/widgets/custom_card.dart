@@ -47,6 +47,10 @@ class CustomCard extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.blueAccent))),
                 backgroundColor:
                     MaterialStateProperty.all<Color>(Const.OffBlue),
                 padding: MaterialStateProperty.all<EdgeInsets>(
