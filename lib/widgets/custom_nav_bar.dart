@@ -46,7 +46,7 @@ class CustomNavBar extends StatelessWidget {
               ' Acadêmico ',
               //TEORICAMENTE O LOGIN
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 17.5,
               ),
             ),
@@ -69,7 +69,7 @@ class CustomNavBar extends StatelessWidget {
             child: Text(
               ' Segurança ', //TEORICAMENTE O LOGIN
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 17.5,
               ),
             ),
@@ -92,7 +92,7 @@ class CustomNavBar extends StatelessWidget {
             child: Text(
               ' Biblioteca ', //TEORICAMENTE O LOGIN
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 17.5,
               ),
             ),
@@ -115,7 +115,7 @@ class CustomNavBar extends StatelessWidget {
             child: Text(
               '   Financeiro   ', //TEORICAMENTE O LOGIN
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 15,
               ),
             ),
@@ -139,7 +139,7 @@ class CustomNavBar extends StatelessWidget {
               '      Eventos      ', //TEORICAMENTE O LOGIN
 
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 15,
               ),
             ),
