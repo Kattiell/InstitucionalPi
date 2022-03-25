@@ -8,8 +8,6 @@
 Site Institucional "Front" - Flutter Web (Flutter 2.0).
 
 ## ScreenShots:
-![image](https://user-images.githubusercontent.com/64443527/136113125-1cb26b25-9759-405f-ae60-a0280b91c5cb.png)
-
 
 
 ## Tools & languages:
